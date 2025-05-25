@@ -67,7 +67,7 @@ module test_compareRecFN#(parameter expWidth = 3, parameter sigWidth = 3);
     wire [4:0] exceptionFlags;
     compareRecFN#(expWidth, sigWidth)
         compareRecFN(
-            recA, recB, signaling, lt, eq, gt, unordere, exceptionFlags);
+            recA, recB, signaling, lt, eq, gt, unordered, exceptionFlags);
     /*------------------------------------------------------------------------
     *------------------------------------------------------------------------*/
     integer errorCount, count, partialCount, out;
